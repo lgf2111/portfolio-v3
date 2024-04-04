@@ -1,6 +1,6 @@
 "use client";
 import { cn } from "@/utils/cn";
-import { IconBrandLinkedin, IconDownload } from "@tabler/icons-react";
+import { IconDownload } from "@tabler/icons-react";
 import { motion, MotionValue } from "framer-motion";
 import React from "react";
 
