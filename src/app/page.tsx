@@ -1,13 +1,15 @@
 "use client";
 
 import React from "react";
+
+import { refs } from "@/utils/refs";
+
 import ContactForm from "./contact-form";
 import Landing from "./landing";
 import About from "./about";
 import Experiences from "./experiences";
 import Certifications from "./certifications";
 import Projects from "./projects";
-import { refs } from "@/utils/refs";
 
 export default function Home() {
   return (

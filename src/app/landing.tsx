@@ -1,6 +1,7 @@
-import { WavyBackground } from "@/components/ui/wavy-background";
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
+
+import { WavyBackground } from "@/components/ui/wavy-background";
 
 export default function Landing() {
   return (

@@ -1,7 +1,8 @@
-import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import React from "react";
-import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
 import Image from "next/image";
+
+import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
+import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
 
 export default function Projects() {
   return (

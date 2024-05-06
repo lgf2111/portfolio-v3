@@ -11,6 +11,7 @@ import {
 } from "@tabler/icons-react";
 import React from "react";
 import emailjs from "@emailjs/browser";
+import { toast } from "sonner";
 
 export default function ContactForm() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -33,11 +34,13 @@ export default function ContactForm() {
         }
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        () => {
+          toast.success("Message sent successfully!");
+          form.reset();
         },
         (error) => {
           console.error(error.text);
+          toast.error("Failed to send message, please try again.");
         }
       );
   };
