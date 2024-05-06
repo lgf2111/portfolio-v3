@@ -14,7 +14,6 @@ export const AnimatedTooltip = ({
   items,
 }: {
   items: {
-    id: number;
     title: string;
     description: string;
     image: string;
@@ -44,10 +43,10 @@ export const AnimatedTooltip = ({
         <div
           className="-mr-4  relative group"
           key={item.title}
-          onMouseEnter={() => setHoveredIndex(item.id)}
+          onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
-          {hoveredIndex === item.id && (
+          {hoveredIndex === idx && (
             <motion.div
               initial={{ opacity: 0, y: 20, scale: 0.6 }}
               animate={{
@@ -83,7 +82,7 @@ export const AnimatedTooltip = ({
             width={100}
             src={item.image}
             alt={item.title}
-            className="object-contain !m-0 !p-0 object-top rounded-full size-10 border-2 group-hover:scale-105 group-hover:z-30 border-slate-200  relative transition duration-500 bg-white"
+            className="object-center !m-0 !p-0 object-top rounded-full size-10 border-2 group-hover:scale-105 group-hover:z-30 border-slate-200  relative transition duration-500 bg-white"
           />
         </div>
       ))}
