@@ -1,5 +1,3 @@
-"use client";
-
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
@@ -12,6 +10,7 @@ import {
   IconBrandWhatsapp,
 } from "@tabler/icons-react";
 import React from "react";
+import emailjs from "@emailjs/browser";
 
 export default function ContactForm() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -20,11 +19,27 @@ export default function ContactForm() {
     const name = form.elements.namedItem("name") as HTMLInputElement;
     const email = form.elements.namedItem("email") as HTMLInputElement;
     const message = form.elements.namedItem("message") as HTMLInputElement;
-    console.log({
-      name: name.value,
-      email: email.value,
-      message: message.value,
-    });
+    emailjs
+      .send(
+        "service_29ss0un",
+        "template_1z5rpin",
+        {
+          from_name: name.value,
+          from_email: email.value,
+          message: message.value,
+        },
+        {
+          publicKey: "UNCtgHQfbRqGb8CUA",
+        }
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.error(error.text);
+        }
+      );
   };
 
   function SocialMediaButton({

@@ -9,7 +9,7 @@ import {
   IconUser,
 } from "@tabler/icons-react";
 import { FloatingNav } from "@/components/ui/floating-navbar";
-import { refs } from "../page";
+import { refs } from "@/utils/refs";
 
 export function Navbar() {
   const navItems = [
