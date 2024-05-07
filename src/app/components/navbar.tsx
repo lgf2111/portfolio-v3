@@ -2,8 +2,8 @@
 
 import React from "react";
 import {
+  IconBlockquote,
   IconBriefcase,
-  IconBuilding,
   IconHome,
   IconLayoutGrid,
   IconMessage,
@@ -36,6 +36,13 @@ export function Navbar() {
       ref: refs.projects,
       icon: (
         <IconLayoutGrid className="size-4 text-neutral-500 dark:text-white" />
+      ),
+    },
+    {
+      name: "Testimonials",
+      ref: refs.testimonials,
+      icon: (
+        <IconBlockquote className="size-4 text-neutral-500 dark:text-white" />
       ),
     },
     {

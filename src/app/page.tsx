@@ -9,6 +9,7 @@ import Landing from "./landing";
 import About from "./about";
 import Experiences from "./experiences";
 import Certifications from "./certifications";
+import Testimonials from "./testimonials";
 import Projects from "./projects";
 
 export default function Home() {
@@ -28,6 +29,9 @@ export default function Home() {
       </div>
       <div className="p-5" ref={refs.projects}>
         <Projects />
+      </div>
+      <div className="p-5" ref={refs.testimonials}>
+        <Testimonials />
       </div>
       <div className="p-5" ref={refs.contactForm}>
         <ContactForm />

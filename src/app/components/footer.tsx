@@ -1,6 +1,5 @@
 "use client";
 
-import { refs } from "@/utils/refs";
 import {
   IconBrandGithub,
   IconBrandInstagram,
@@ -16,11 +15,14 @@ export default function Footer() {
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
-            <a href="https://lgf2111.com/" className="flex items-center">
+            <a href="#" className="flex items-center">
               <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
                 Jeff Lee
               </span>
             </a>
+            <p className="mt-2 text-gray-500 dark:text-gray-400">
+              Last updated: 7 May 2024
+            </p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 sm:gap-6">
             <div>
