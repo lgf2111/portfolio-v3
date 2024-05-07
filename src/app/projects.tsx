@@ -13,10 +13,10 @@ export default function Projects() {
           <BentoGridItem
             key={i}
             title={item.title}
+            href={item.href}
             description={item.description}
             header={item.header}
             icon={item.icon}
-            // className={i === 3 || i === 6 ? "md:col-span-2" : ""}
           />
         ))}
       </BentoGrid>
@@ -138,6 +138,7 @@ const tech = {
 const items = [
   {
     title: "Lovelace",
+    href: "https://github.com/pi-mon/lovelace",
     description: (
       <div>
         <div className="min-h-12">
@@ -175,6 +176,7 @@ const items = [
   },
   {
     title: "Flask Blog Secure",
+    href: "https://github.com/lgf2111/flask-blog-secure",
     description: (
       <div>
         <div className="min-h-12">
@@ -212,7 +214,7 @@ const items = [
   },
   {
     title: "Vision Core",
-
+    href: "https://github.com/lgf2111/vision-core",
     description: (
       <div>
         <div className="min-h-12">
@@ -250,7 +252,7 @@ const items = [
   },
   {
     title: "Timer Plus",
-
+    href: "https://github.com/lgf2111/timer-plus",
     description: (
       <div>
         <div className="min-h-12">
@@ -280,6 +282,7 @@ const items = [
   },
   {
     title: "Django Store",
+    href: "https://github.com/lgf2111/django-store",
     description: (
       <div>
         <div className="min-h-12">
@@ -308,6 +311,7 @@ const items = [
   },
   {
     title: "The Solar System",
+    href: "https://github.com/lgf2111/the-solar-system",
     description: (
       <div>
         <div className="min-h-12">View the solar system in 3D.</div>
@@ -334,6 +338,7 @@ const items = [
   },
   {
     title: "Career Meet",
+    href: "https://github.com/lgf2111/career-meet",
     description: (
       <div>
         <div className="min-h-12">Meetup, with University Students.</div>
@@ -360,10 +365,11 @@ const items = [
   },
   {
     title: "Lecture Summariser",
+    href: "https://github.com/lgf2111/lecture-summariser",
     description: (
       <div>
         <div className="min-h-12">
-          Upload your lecture videos and we will summarize them for you.
+          Upload your lecture videos and we will summarise them for you.
         </div>
         <div className="flex flex-row items-center mt-2">
           <AnimatedTooltip items={[tech.openai, tech.django, tech.bootstrap]} />
