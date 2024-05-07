@@ -38,7 +38,7 @@ function Skeleton({
       <Image
         src={src}
         alt={alt}
-        className="object-contain w-full h-full aspect-video rounded-xl border"
+        className="object-contain w-full h-full aspect-video rounded-xl border-2 border-neutral-200 dark:border-neutral-800"
         width={254}
         height={182}
       />

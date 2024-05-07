@@ -73,7 +73,7 @@ export default function ContactForm() {
   return (
     <div className="">
       <h1 className="text-4xl">Contact</h1>
-      <div className="max-w-lg w-full mx-auto my-6 rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">
+      <div className="max-w-lg w-full mx-auto my-6 rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black border border-neutral-200 dark:border-neutral-800">
         <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200">
           Contact Me
         </h2>
@@ -113,7 +113,7 @@ export default function ContactForm() {
           </p>
           <div className="flex flex-col space-y-4 my-8">
             <SocialMediaButton
-              href="https://www.linkedin.com/lee-guan-feng"
+              href="https://www.linkedin.com/in/lee-guan-feng/"
               Icon={IconBrandLinkedin}
               text="Linkedin"
             />
@@ -123,7 +123,7 @@ export default function ContactForm() {
               text="Github"
             />
             <SocialMediaButton
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/lgf2111"
               Icon={IconBrandInstagram}
               text="Instagram"
             />

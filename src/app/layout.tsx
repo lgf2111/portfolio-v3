@@ -5,6 +5,8 @@ import { Analytics } from "@vercel/analytics/react";
 
 import "./globals.css";
 import { Navbar } from "./components/navbar";
+import Footer from "./components/footer";
+import { cn } from "@/utils/cn";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,10 +22,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={cn("dark", inter.className)}>
         <Toaster />
         <Navbar />
         {children}
+        <Footer />
         <Analytics />
       </body>
     </html>
